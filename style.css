@@ -1,0 +1,322 @@
+/* CSS för stader.html, helsingborg.html, kristianstad.html, lund.html, malmo.html, ystad.html */
+
+html, body {
+    height: 100%;   /* Gör så att body täcker hela höjden */
+    margin: 0;  /* Tar bort standardmarginalen */
+    background-color: #F27405;  /*Orange bakgrundsfärg*/
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Times New Roman', Times, serif;   /*Anger Times New Roman som font för rubriker*/
+    text-align: center; /*Centrerar rubriker*/
+}
+
+h1 {
+    color: #D90404; /*Röd färg för h1*/
+    border: 3px solid #F2E205;  /*Gul ram för h1*/
+    padding: 20px;  /*Inre marginal för h1*/
+    border-radius: 8px; /*Rundade hörn för h1*/
+    background-color: #F2E205;  /*Gul bakgrund för h1*/
+    text-align: center; /*Centrerar texten*/
+    width: 70%; /*Bredd på h1*/
+    margin: 30px auto;  /*Centrerar h1 horisontellt med auto marginaler*/
+    display: block; /*Gör h1 till blockelement*/
+}
+
+h3  {
+    color: #D90404;
+    border: 3px solid #F2E205;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #F2E205;
+    text-align: center;
+    width: 70%;
+    margin: 70px auto 10px auto;
+    display: block;
+}
+
+h4 {
+    color: #000000;
+    border: 3px solid #F2E205;
+    border-radius: 8px;
+    background-color: #ffffff;
+    max-width: 200px;
+    margin: 0 auto 0px auto;
+    font-size: 18px;    /* Storlek på h4 */
+    line-height: 1.6;   /* Radavstånd för läsbarhet */
+    text-align: center; /*Centrerar texten*/
+}
+
+p {
+    font-family: Georgia, serif;    /* Anger Georgia som font för brödtext */
+    line-height: 1.6;
+    margin: 0 20px;
+}
+
+header h1 { /* Specifik stil för h1 i header */
+    font-size: 3em;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.liten-logga {  /* Klass för liten logga i header */
+    width: 100px;
+    height: auto;
+    position: absolute; /* Absolut positionering */
+    top: 20px;  /* Justerar positionen upptill*/
+    left: 30px; /* Justerar positionen till vänster*/
+}
+
+.slogan {   /* Klass för slogan i header */
+    color: #D90404;
+    border: 3px solid #F2E205;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #F2E205;
+    width: 40%;
+    margin: 30px auto;
+    display: block;
+}
+
+.meny {  /* Klass för navigationsmenyn */
+    list-style: none;   /* Tar bort standardpunktlistan */
+    display: flex;  /* Använder flexbox för layout */
+    justify-content: center;    /* Centrerar menyalternativen */
+    gap: 60px;  /* Avstånd mellan menyalternativen */  
+    padding: 0;
+    margin: 0;
+    padding-bottom: 40px;   /* Avstånd under menyn */
+    padding-top: 50px;  /* Avstånd över menyn */
+}
+
+.meny li a {    /* Stil för länkar i menyn */
+    text-decoration: none;  /* Tar bort understrykning */
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    border: 3px solid #F2E205;
+    border-radius: 8px;
+    padding: 10px 15px;
+    background-color: #ffffff;
+}
+
+.meny li a:hover {  /* Hover-effekt för menylänkar */
+    color: #D90404;
+}
+
+main {  /* Stil för main-innehållet */
+    width: 80%; /* Bredd på main */
+    margin: 0 auto;
+}
+
+.bild-meny {    /* Klass för bildmeny-sektionen */
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.meny-kort {    /* Klass för varje meny-kort */
+    width: 100%;
+    position: relative;
+    max-width: 300px;
+    overflow: hidden;   /* Förhindrar att texten går utanför kortet */
+}
+
+.meny-kort img {    /* Stil för bilder i meny-kort */
+    width: 300px;
+    height: 200px;
+    object-fit: cover;  /* Beskär bilden för att fylla kortet */
+    display: block; /* Tar bort eventuella mellanrum under bilden */
+    border-radius: 8px;
+
+}
+
+.text,
+.hover-text {   /* Stil för text över bilderna */
+    position: absolute; /* Absolut positionering */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);    /* Centrerar texten */
+    color: rgb(235, 227, 81);
+    font-size: 22px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(248, 13, 13, 0.6);
+}
+
+.hover-text {   /* Initialt dold hover-text */
+    display: none;  /* Döljer hover-text initialt */
+}
+
+.meny-kort:hover .text {    /* Döljer vanlig text vid hover */
+    display: none;  /* Döljer vanlig text vid hover */
+}
+
+.meny-kort:hover .hover-text {  /* Visar hover-text vid hover */
+    display: block; /* Visar hover-text vid hover */
+}
+
+* {
+    box-sizing: border-box; /* Inkluderar padding och border i elementens totala storlek */
+}
+
+.bakgrundp {    /* Klass för bakgrundssektionen */
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    border-radius: 8px;
+    border: 3px solid #F2E205;
+    background-color: #ffffff;
+    padding: 20px;}
+
+.stad-bild {    /* Klass för stad-bilder */
+    width: 800px;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto 50px auto;
+    border-radius: 12px;
+    border: 3px solid #F2E205;
+}
+
+.kontakt-sektion {  /* Klass för kontakt-sektionen */
+    background-color: #F2E205;
+    padding: 0px 20px;
+    padding-bottom: 20px;
+    border-radius: 12px;
+    max-width: 1000px;
+    margin: 50px auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Lägger till skugga för djup */
+    text-align: center;
+}
+
+.kontakt-sektion h3 {   /* Stil för rubriken i kontakt-sektionen */
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #D90404;
+}
+
+.kontakt-sektion p {    /* Stil för texten i kontakt-sektionen */
+    font-family: Georgia, serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.kontakt-sektion a {    /* Stil för länkar i kontakt-sektionen */
+    color: #D90404;
+    text-decoration: none;  /* Tar bort understrykning */
+}
+
+.kontakt-sektion a:hover {  /* Hover-effekt för länkar i kontakt-sektionen */
+    text-decoration: underline;
+}
+
+
+
+.sections-wrapper { /* Wrappa alla sections i en parent-flex */
+    display: flex;
+    gap: 20px;
+    justify-content: space-between; /* Jämnt fördelade */
+    flex-wrap: wrap;    /* Gör att de radbryts på mobil */
+    margin: 20px 0;
+}
+
+
+.container {    /* Varje box */
+    flex: 1;    /* Gör att alla boxar blir lika breda */
+    min-width: 250px;   /* Så att layouten inte kraschar på små skärmar */
+    background: gainsboro;  /* Ljusgrå bakgrundsfärg */
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column; /* Text + bild ovanpå varandra */
+    justify-content: flex-start;
+    align-items: center;    /* Centrerar horisontellt */
+
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);  /* Lägger till skugga för djup */
+    text-align: center;   /* Centrerar titel, bild och text */
+    border: 3px solid #000000;
+}
+
+
+.container img {    /* Stil för bilder i varje box */
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0;
+    object-fit: cover;  /* Beskär bilden för att fylla boxen */
+    display: block;
+}
+
+.header-stad {  /* Klass för stora header-bilden på stadssidor */
+    background-size: cover;
+    background-position: center;
+    background-position: center center; /* visar mitten */
+    min-height: 400px;  /* Minsta höjd */
+    padding: 20px;
+
+    display: flex;  /* Använder flexbox */
+    flex-direction: column; /* Lägger allt ovanpå varandra */
+    justify-content: center;  /* Centrerar vertikalt */
+    align-items: center;    /* Centrerar horisontellt */
+
+    text-align: center;
+    color: white;
+
+    border-radius: 20px;
+    border: 4px solid black;  /* Svart ram */
+    overflow: hidden;   /* Förhindrar att innehåll går utanför, rundar bilden */
+}
+.header-stad h2,
+.header-stad p {    /* Stil för text i header-stad */
+    text-shadow: 2px 2px 5px black;
+    background: rgba(0, 0, 0, 0.5); /* svart transparent */
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.boka-knapp {   /* Klass för boka-knappen */
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: yellow;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;  /* Gör texten fet */
+    border-radius: 8px;
+}
+.boka-knapp:hover {  /* Hover-effekt för boka-knappen */
+    background-color: #ffffff;
+    color: #D90404;
+    border-color: #D90404;
+    transition: 0.2s;
+    font-size: 1.5em;   /* Gör texten större vid hover */
+}
+
+.info-box {  /* Klass för informationsrutor */
+    background: #ffffff;
+    border-left: 6px solid #D90404;
+
+    padding: 20px 25px;
+    margin: 50px auto;
+    max-width: 700px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-size: 1.2em;
+    line-height: 1.7;
+}
+
+
+
+
+
+
+
+
+

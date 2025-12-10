@@ -1,0 +1,109 @@
+<!DOCTYPE html> <!--användning av HTML 5-->
+<html lang ="sv"> <!--teckenkodning för svenska, inkluderar å ä ö-->
+    <head>  <!--head med info om titel, charset och länk till css-fil-->
+        <title>vårwebbsida</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <header>  <!--header med h1 företagsnamn, h2 slogan och företags-loggan-->
+        <h1 id="startsida">SkåneGuiden</h1>
+        <h2 class="slogan">Upptäck Skåne</h2>
+        <img src="Bilderkomprimerade/Logga.webp" alt="logga" class="liten-logga">
+
+        <nav> <!--nav med listad meny med huvudsakligt innehåll-->
+            <ul class="meny">
+                <li><a href="#startsida">Startsida</a></li>
+                <li><a href="#bakgrund">Om oss</a></li>
+                <li><a href="#stader">Städer</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+
+      <div class="bild-meny">
+
+        <div class="meny-kort"> <!--div med class för ytterliggare meny men i bild-format med text ovanpå-->
+          <img src="Bilderkomprimerade/Raps.webp" alt="rapsäng">  <!--bakgrundbild-->
+          <div class="text">Gemenskap</div> <!--värdegrunds-ord-->
+          <div class="hover-text">Våra turer handlar om möten, delade upplevelser och trivsel.</div>  <!--den text som kommer upp när man hovrar-->
+        </div>
+
+        <div class="meny-kort"> 
+          <img src="Bilderkomprimerade/Aker.webp" alt="åker">
+          <div class="text">Kultur</div>
+          <div class="hover-text">Vi vill lyfta fram Skånes historia, traditioner och berättelser.</div>
+        </div>
+
+        <div class="meny-kort">
+          <img src="Bilderkomprimerade/Skog.webp" alt="skog">
+          <div class="text">Upptäckande</div>
+          <div class="hover-text">Varje tur ska väcka nyfikenhet och lust att utforska mer.</div>
+        </div>
+
+      </div>  <!--slut-div-->
+
+      <section> <!--section med bakgrund om företag i h3 rubrik och p brödtext-->
+      <h3 id="bakgrund">Om oss och vår bakgrund</h3>
+      <p class="bakgrundp">SkåneGuiden grundades år 2023 av tre personer som delar ett stort intresse för skånsk kultur, historia och upplevelser. Företaget drivs på fritiden och är relativt litet, men erbjuder prisvärda rundvandringar i flera av Skånes mest populära städer. Vår verksamhet har hittills främst marknadsförts via sociala medier, men då intresset har ökat behöver vi nu en egen webbplats som samlar all information och gör det enklare att hantera bokningar.
+Vi är ett lågbudgetföretag med fokus på tillgänglighet, enkelhet och glädje i upplevelsen.</p>
+      </section>
+
+      <section> <!--section för h3 rubrik om städer-->
+        <h3 id="stader">Städer</h3>
+      </section>
+
+      <section> <!--section för varje stad med h4 rubrik, bild på stad och href/länk att klicka vidare till stadens egen sida/fil-->
+        <h4>Lund</h4>
+        <a href="lund.html">
+        <img src="Bilderkomprimerade/Lund-universitet.webp" alt="lund" class="stad-bild">
+      </a>
+      </section>
+
+      <section>
+        <h4>Helsingborg</h4>
+        <a href="helsingborg.html">
+        <img src="Bilderkomprimerade/Helsingborg-ovan.webp" alt="helsingborg" class="stad-bild">
+      </a>
+      </section>
+
+      <section>
+        <h4>Kristianstad</h4>
+        <a href="kristianstad.html">
+        <img src="Bilderkomprimerade/stadshotellet-kristianstad.webp" alt="kristianstad" class="stad-bild">
+      </a>
+      </section>
+
+      <section>
+        <h4>Malmö</h4>
+        <a href="malmo.html">
+        <img src="Bilderkomprimerade/Malmo-torg.webp" alt="malmö" class="stad-bild">
+      </a>
+      </section>
+
+      <section>
+        <h4>Ystad</h4>
+        <a href="ystad.html">
+        <img src="Bilderkomprimerade/Ystad-gata.webp" alt="ystad" class="stad-bild">
+     </a>
+      </section>
+
+      <section class="kontakt-sektion"> <!--section med konakt information med vardera digitala kanals rubrik i fetstil/"strong"-->
+<h3 id="kontakt">Kontakt</h3>
+<p>Kontakta oss gärna för frågor eller funderingar!</p>
+<div class="kontakt-info">
+<p><strong> Instagram:</strong> @SkåneGuiden</p>
+<p><strong>Facebook:</strong> @SkåneGuiden</p>
+<p><strong>E-mail:</strong><a href="mailto:skaneguiden@gmail.com"> skaneguiden@gmail.com</a></p>  <!--href för att visa att man kan klicka på mailen, dock har vi inte kodat detta vidare då det inte är en riktig mail-->
+<p><strong>Team:</strong> Elin Rosenberg, Ellen Hallberg, Tilda Andersson</p>
+</div>
+      </section>
+
+      <br>  <!--brytande av rader för att öka avståndet-->
+      <br>
+
+    </main>
+</body>
+</html>
